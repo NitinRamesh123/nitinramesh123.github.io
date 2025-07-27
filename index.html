@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Awesome GitHub Page</title>
+    <meta charset="UTF-8">
+    <title>Button Test</title>
 </head>
 <body>
-  <h1>Welcome to my site!</h1>
-  <p>haha idk why im doing this lmao</p>
+    <h1>Click the Button!</h1>
+    
+    <form method="POST">
+        <button type="submit">Click me</button>
+    </form>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
 </body>
 </html>
